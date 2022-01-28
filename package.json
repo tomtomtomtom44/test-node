@@ -1,0 +1,26 @@
+{
+  "name": "test-node",
+  "version": "1.0.0",
+  "description": "package to test node fonctionalities",
+  "main": "myFirst.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomtomtomtom44/test-node.git"
+  },
+  "keywords": [
+    "node",
+    "tests"
+  ],
+  "author": "thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomtomtomtom44/test-node/issues"
+  },
+  "homepage": "https://github.com/tomtomtomtom44/test-node#readme",
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}
