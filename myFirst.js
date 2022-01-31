@@ -1,9 +1,14 @@
-var http = require('http');
-var dt = require('./myfirstmodule')
+const express = require('express');
+const dt = require('./myfirstmodule');
 
-http.createServer(function (req, res) {
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    res.write(req.url);
-    res.write("The date and time are currently: " + dt.myDateTime());
-    res.end();
-}).listen(8081);
+// Constantes
+const PORT=8081;
+const HOST = '0.0.0.0';
+
+const app = express();
+app.get('/', (req, res) => {
+    res.send("The date and time are currently: " + dt.myDateTime());
+});
+
+app.listen(PORT, HOST);
+console.log(`Running on http://${HOST}:${PORT}`);
