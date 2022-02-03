@@ -1,4 +1,4 @@
-FROM node:fermium
+FROM node:14-alpine
 #Create app directory
 WORKDIR /usr/src/app
 #Install app dependencies
